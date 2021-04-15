@@ -1,0 +1,251 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.logo {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    position: fixed;
+    left: 50px;
+}
+
+.container {
+    margin: auto;
+    margin-top: 150px;
+    /*border: 2px solid black;*/
+    width: 1130px;
+    position: fixed;
+    left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "image info";
+    grid-gap: 50px;
+}
+
+
+.info {
+    margin-top: 40px;
+    grid-area: info;
+
+}
+
+
+.image {
+    grid-area: image;
+    width: 620px;
+}
+
+
+.hr {
+    grid-area: hr;
+    line-height: 50px;
+}
+
+
+
+.p {
+    grid-area: p;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.register {
+    border-radius: 50px;
+    border: none;
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    /*background-color: hsl(300, 69%, 71%);*/
+    color: black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
+}
+
+
+.register:hover {
+    background-color:  hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+
+.logos{
+    position: fixed;
+    left: 1100px;
+    bottom: 20px;
+}
+
+
+
+.logo-facebook {
+    width: 25px;
+    cursor: pointer;
+}
+
+
+.logo-facebook:hover {
+    color: hsl(300, 69%, 71%);
+    
+}
+
+.logo-twitter {
+    width: 25px;
+    cursor: pointer;
+}
+
+.logo-twitter:hover {
+    color: hsl(300, 69%, 71%);
+
+}
+
+
+.logo-instagram {
+    width: 25px;
+    cursor: pointer;
+}
+
+
+.logo-instagram:hover {
+    color: hsl(300, 69%, 71%);
+
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 375px) {
+
+    body {
+        font-size: 12px;
+        background-image: url('bg-desktop.svg');
+        width: 100%;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: auto;
+        justify-content: left;
+        margin-left: -50px;
+        
+    }
+
+
+    .logos {
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        left: 140px;
+    }
+
+
+    .logo {
+        display: block;
+        width: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    
+    .info {
+        margin-top: 70px;
+        grid-area: info;
+    
+    }
+    
+    
+    .image {
+        grid-area: image;
+        width: 75%;
+        position: fixed;
+        top: 100px;
+    }
+    
+    
+    .hr {
+        grid-area: hr;
+        line-height: 40px;
+        text-align: center;
+        position: fixed;
+        top: 325px;
+        left: 60px;
+    }
+    
+    
+    
+    .p {
+        display:inline-flex;
+        grid-area: p;
+        margin-bottom: 30px;
+        text-align: center;
+        position: fixed;
+        padding: 30px 40px 30px 40px;
+        top: 390px;
+        left:10px;
+        font-size: 100%;
+        line-height: 20px;
+    }
+    
+    .register {
+        border-radius: 50px;
+        border: none;
+        width: 180px;
+        height: 40px;
+        background-color: white;
+        /*background-color: hsl(300, 69%, 71%);*/
+        color: black;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.411);
+        cursor: pointer;
+        position: fixed;
+        top: 555px;
+        left: 100px;
+    }
+    
+    
+    .register:hover {
+        background-color:  hsl(300, 69%, 71%);
+        color: white;
+    }
+    
+    
+    .logo-facebook {
+        width: 15px;
+        cursor: pointer;
+    }
+    
+    
+    .logo-facebook:hover {
+        color: hsl(300, 69%, 71%);
+        
+    }
+    
+    .logo-twitter {
+        width: 15px;
+        cursor: pointer;
+    }
+    
+    
+    .logo-instagram {
+        width: 15px;
+        cursor: pointer;
+    }
+
+
+    footer{
+        position: absolute;
+        bottom: auto;
+    }
+    
+
+}
